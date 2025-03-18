@@ -1,23 +1,23 @@
+### Ph.D. Period
+
+**[1] National Key Research and Development Program, China**  
+**Project Name:** Key Technology for High-Density, Large-Capacity, and Fast-Response Solid-State Hydrogen Storage  
+**Project Leader:** Chaoyin Zhao  
+**Role:** Studied mass transfer of hydrogen in hydride.  
+
+**[2] National Key Research and Development Program "Intergovernmental International Science and Technology Innovation Cooperation", China**  
+**Project Name:** Collaborative Research on Hydrogen Purification Materials and Process Optimization by Medium-Temperature Rapid Pressure Swing Adsorption  
+**Project Leader:** Kaijie Chen & Michael Zaworotko  
+**Role:** Investigated mass transfer of gas mixtures in adsorption beds.  
+
 ### Master Period
 
-[1] Project Type: Major Science and Technology Project of Shanxi Province, China.\
-    Project Name: Study on coalbed methane desorption and dual pore gas-water mass transfer mechanism.\
-    Project leader: Dongmin Ma.\
-    Project role: Responsible for mass transfer research in coalbed methane.\
-    
-[2] Project Type: National Natural Science Foundation, China
-    Project Name: Methane desorption mechanism of different coal components in low-rank coal under wettability constraints
-    Project leader: Yue Chen
-    Project role: Responsible for the coalbed methane adsorption experiment under different wetting conditions. 
+**[1] Major Science and Technology Project of Shanxi Province, China**  
+**Project Name:** Study on Coalbed Methane Desorption and Dual Pore Gas-Water Mass Transfer Mechanism  
+**Project Leader:** Dongmin Ma  
+**Role:** Responsible for mass transfer research in coalbed methane.  
 
-### Ph. D Period
-
-[1] Project Type: National Key Research and Development Program, China
-    Project Name: Key technology for high-density, large-capacity and fast-response solid-state hydrogen storage, person in charge.
-    Project leader: Chaoyin Zhao
-    Project role: Study on Mass Transfer of Hydrogen in Hydride.
- 
-[2] Project Type: National Key Research and Development Program "Intergovernmental International Science and Technology Innovation Cooperation", China
-    Project Name: Collaborative research on hydrogen purification materials and process optimization by medium-temperature rapid pressure swing adsorption
-    Project leader: KaiJie Chen & Michael Zaworotko
-    Project role: Study on Mass Transfer of Gas Mixture in Adsorption Bed. 
+**[2] National Natural Science Foundation, China**  
+**Project Name:** Methane Desorption Mechanism of Different Coal Components in Low-Rank Coal under Wettability Constraints  
+**Project Leader:** Yue Chen  
+**Role:** Conducted coalbed methane adsorption experiments under different wetting conditions.  
