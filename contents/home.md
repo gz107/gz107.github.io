@@ -1,16 +1,21 @@
 
 
-[![senli1073](https://img.shields.io/badge/senli1073-github-blue?logo=github)](https://github.com/senli1073)
+[![gz107](https://img.shields.io/badge/senli1073-github-blue?logo=github)](https://github.com/gz107)
 
-He is currently pursuing a Master's Degree in Computer Science, at School of Computer Science and Technology, China University of Mining and Technology, China.
+He is currently pursuing a Ph.D's Degree in Power Engineering and Engineering Thermophysics, at School of Energy and Power Engineering, Xi'an Jiaotong University, China.
 
 #### Email
-sli[at]cumt.edu.cn
+gaozheng[at]stu.xjtu.edu.cn
 
 #### Education
-M.E., Computer Science and Technology, China University of Mining and Technology, 2022—2025 (expected).\
-B.E., Data Science and Big Data Technology, China University of Mining and Technology, 2018—2022.
+**Ph.D candidate**, 2021.09--present, Xi'an Jiaotong University, China
+ 
+**Master**, 2020.10--2021.01, Peter the Great Saint-Petersburg Polytechnic University, Russia
+
+**Master**, 2018.09--2021.06, Xi'an University of Science and Technology, China
+
+**Bachelor** 2014.09--2018.06, Xi'an University of Science and Technology, China
+
 
 #### Research Interests
-Deep Learning, Artificial Intelligence Seismology, Mine Microseismic.
-
+Machine learning,Gas adsorption,Storage of hydrogen,Molecular simulation,Pressure swing adsorption process,Heat and mass transfer.
