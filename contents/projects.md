@@ -1,4 +1,5 @@
-### Ph.D. Period
+
+### PhD Period
 
 **[1] National Key Research and Development Program, China**  
 **Project Name:** Key Technology for High-Density, Large-Capacity, and Fast-Response Solid-State Hydrogen Storage  
