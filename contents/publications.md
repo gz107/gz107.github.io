@@ -1,4 +1,4 @@
-### <center>---------------------------------Journal  Papers---------------------------------</center>
+### <center>Journal  Papers</center>
 
 #### 2024
 
@@ -31,7 +31,7 @@ Huanglong coalfield\". *Journal of Henan Polytechnic University(Natural Science)
 
 [1] Y.Chen, D.Ma*, C.Guo, F.Yang, T.Mu, **Z.Gao**, \"An experimental study on the conductivity changes in coal during methane adsorptionādesorption and their influencing factors\", *Acta Geologica SinicaāEnglish Edition*, 2019, 93 (3), 704-717. [[link]](https://onlinelibrary.wiley.com/doi/abs/10.1111/1755-6724.13873)
 
-### <center>------------Conference Papers------------</center>
+### <center>Conference Papers-</center>
 
 [2] **Z.Gao**, Z.Qu*. High throughput screening of covalent organic frameworks membrane for hydrogen separation from hydrogen-doped natural gas[C].The 9th Asian Symposium on Computational Heat Transfer and Fluid Flow(ASCHT'2023), December 4-6, 2023,Thuwal, Saudi Arabia. Oral presentation
 
