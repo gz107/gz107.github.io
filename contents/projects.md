@@ -1,5 +1,5 @@
 
-### PhD Period
+#### PhD Period
 
 [4] **National Key Research and Development Program, China**  
 **Project Name:** Key Technology for High-Density, Large-Capacity, and Fast-Response Solid-State Hydrogen Storage  
@@ -11,7 +11,7 @@
 **Project Leader:** Kaijie Chen & Michael Zaworotko  
 **Role:** Investigated mass transfer of gas mixtures in adsorption beds.  
 
-### Master Period
+#### Master Period
 
 [2] **Major Science and Technology Project of Shanxi Province, China**  
 **Project Name:** Study on Coalbed Methane Desorption and Dual Pore Gas-Water Mass Transfer Mechanism  
