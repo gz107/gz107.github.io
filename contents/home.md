@@ -18,4 +18,4 @@ gaozheng[at]stu.xjtu.edu.cn
 
 
 #### Research Interests
-Machine learning,Gas adsorption,Storage of hydrogen,Molecular simulation,Pressure swing adsorption process,Heat and mass transfer.
+Machine learning, Gas adsorption, Storage of hydrogen, Molecular simulation, Pressure swing adsorption process, Heat and mass transfer.
