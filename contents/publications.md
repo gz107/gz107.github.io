@@ -2,7 +2,7 @@
 
 #### 2025
 
-[11] **Z.Gao**, H Wang, Z-G,Qu,\"High-throughput screening of covalent organicframework membranes separation for hydroge from hydrogen-blended natural gas\",*Applied Thermal Engineering*.accept
+[11] **Z.Gao**, H Wang, Z-G,Qu,\"High-throughput screening of covalent organicframework membranes separation for hydroge from hydrogen-blended natural gas\",*Applied Thermal Engineering*.In press
 
 #### 2024
 
