@@ -2,7 +2,7 @@
 
 [![gz107](https://img.shields.io/badge/senli1073-github-blue?logo=github)](https://github.com/gz107)
 
-He is currently pursuing a Ph.D's Degree in Power Engineering and Engineering Thermophysics, at School of Energy and Power Engineering, Xi'an Jiaotong University, China.
+I am currently pursuing a Doctor's Degree in Power Engineering and Engineering Thermophysics, at School of Energy and Power Engineering, Xi'an Jiaotong University, China.
 
 #### Email
 gaozheng[at]stu.xjtu.edu.cn
