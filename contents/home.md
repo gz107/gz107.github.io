@@ -1,6 +1,6 @@
 
 
-[![gz107](https://img.shields.io/badge/senli1073-github-blue?logo=github)](https://github.com/gz107)
+[![gz107](https://img.shields.io/badge/gz107-github-blue?logo=github)](https://github.com/gz107)
 
 I am currently pursuing a Doctor's Degree in Power Engineering and Engineering Thermophysics, at School of Energy and Power Engineering, Xi'an Jiaotong University, China.
 

@@ -1,2 +1,2 @@
-## A simple Github Pages template for personal academic websites.
+## A simple personal academic websites for Zheng GAO.
 
