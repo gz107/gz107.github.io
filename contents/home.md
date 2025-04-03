@@ -10,8 +10,7 @@ I am currently pursuing a Doctor's Degree in Power Engineering and Engineering T
 gaozheng[at]stu.xjtu.edu.cn
 
 #### Education
-
-**Ph.D candidate**, 2021.09--present, Xi'an Jiaotong University, China
+![Logo](https://gz107.github.io/static/assets/img/logo.png) **Ph.D candidate**, 2021.09--present, Xi'an Jiaotong University, China
  
 **M.Eng**, 2020.10--2021.01, Peter the Great Saint-Petersburg Polytechnic University, Russia
 
