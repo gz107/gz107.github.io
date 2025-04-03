@@ -11,13 +11,13 @@ gaozheng[at]stu.xjtu.edu.cn
 
 #### Education
 
-<img src="https://gz107.github.io/static/assets/img/xjtu.png" alt="Logo" width="20px">  **Ph.D. Candidate** | Xi'an Jiaotong University | *2021.09 – Present* | Xi'an, China
+**Ph.D. Candidate** | Xi'an Jiaotong University | 2021.09 – Present | Xi'an, China
 
-<img src="https://gz107.github.io/static/assets/img/spbstu.png" alt="Logo" width="20px">  **M.Eng** | Peter the Great Saint-Petersburg Polytechnic University | *2020.10--2021.01* | St. Petersburg, Russia
+**M.Eng** | Peter the Great Saint-Petersburg Polytechnic University | 2020.10--2021.01 | St. Petersburg, Russia
 
-<img src="https://gz107.github.io/static/assets/img/xust.png" alt="Logo" width="20px">  **M.Eng** | Xi'an University of Science and Technology | *2018.09--2021.06*| Xi'an, China
+**M.Eng** | Xi'an University of Science and Technology | 2018.09--2021.06| Xi'an, China
 
-<img src="https://gz107.github.io/static/assets/img/xust.png" alt="Logo" width="20px">  **B.E** | Xi'an University of Science and Technology | *2014.09--2018.06* | Xi'an, China
+**B.E** | Xi'an University of Science and Technology | 2014.09--2018.06 | Xi'an, China
 
 
 #### Research Interests
