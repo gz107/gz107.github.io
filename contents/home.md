@@ -11,8 +11,6 @@ gaozheng[at]stu.xjtu.edu.cn
 
 #### Education
 
-**Visiting scholar** | Tohoku University | 2025.11-2026.11 | Sendai ,Japan
-
 **Ph.D. Candidate** | Xi'an Jiaotong University | 2021.09–Present | Xi'an, China
 
 **Visiting scholar** | Peter the Great St. Petersburg Polytechnic University | 2020.10–2021.01 | St. Petersburg, Russia
