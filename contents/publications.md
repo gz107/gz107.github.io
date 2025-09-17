@@ -2,7 +2,7 @@
 
 #### 2025
 
-[13] W Gao, Z Qu, **Z Gao**, J Zhang, W Yang,\"Multi-step numerical method for the hydrogen storage performance optimisation of metal hydride reactors\".*Journal of Energy Storage*.2025,133,118000.[[limk]](https://www.sciencedirect.com/science/article/pii/S2352152X25027136)
+[13] W Gao, Z Qu, **Z Gao**, J Zhang, W Yang,\"Multi-step numerical method for the hydrogen storage performance optimisation of metal hydride reactors\".*Journal of Energy Storage*.2025,133,118000.[[link]](https://www.sciencedirect.com/science/article/pii/S2352152X25027136)
 
 [12] **Z.Gao**, H Wang, Z-G,Qu,\"Data-driven high-throughput screening of anion-pillared metal organic frameworks for hydrogen storage\". *CIESC Journal*.2025, DOI: 10.11949/0438-1157.20250178.[[Link]](https://hgxb.cip.com.cn/CN/10.11949/0438-1157.20250178)
 
