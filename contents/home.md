@@ -1,15 +1,17 @@
 
 
-[![ResearchGate](https://img.shields.io/badge/ResearchGate-00CCBB?logo=researchgate&logoColor=white)](https://www.researchgate.net/profile/Zheng-Gao-27?ev=hdr_xprf)
+[![ResearchGate](https://img.shields.io/badge/ResearchGate-00CCBB?logo=researchgate&logoColor=white)](https://www.researchgate.net/profile/Zheng-Gao-31?ev=hdr_xprf)
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-4285F4?logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=8JTVl_MAAAAJ&hl=en)
 
 I am currently pursuing a Doctor's Degree in Power Engineering and Engineering Thermophysics, at School of Energy and Power Engineering, Xi'an Jiaotong University, China.
 
 #### Email
 
-gaozheng[at]stu.xjtu.edu.cn
+zheng.gao.a6[at]tohoku.ac.jp | gaozheng[at]stu.xjtu.edu.cn
 
 #### Education
+
+**Visiting scholar** | Tohoku University | 2025.11–2026.11 | Sendai, Japan
 
 **Ph.D. Candidate** | Xi'an Jiaotong University | 2021.09–Present | Xi'an, China
 
