@@ -5,46 +5,38 @@
 
 ---
 
-## 👋 About Me
+### 👋 About Me
 
-I am currently pursuing a **Doctoral Degree in Power Engineering and Engineering Thermophysics**  
-at the **School of Energy and Power Engineering, Xi'an Jiaotong University, China**.  
-My research focuses on gas adsorption, gas separation, and data-driven molecular simulation.
+I am currently pursuing a **Doctoral Degree in Power Engineering and Engineering Thermophysics**  at the **School of Energy and Power Engineering, Xi'an Jiaotong University, China**.  My research focuses on gas adsorption, gas separation, and data-driven molecular simulation.
 
 ---
 
-## ✉️ Contact
+### ✉️ Contact
 
-📧 zheng.gao.a6\[at\]tohoku.ac.jp  
-📧 gaozheng\[at\]stu.xjtu.edu.cn  
-
----
-
-## 🎓 Education & Research Experience
-
-### 🌍 Visiting Scholar  
-**Tohoku University**, *Sendai, Japan*  
-**Nov 2025 – Nov 2026**
-
-### 🎓 Ph.D. Candidate · Engineering Thermophysics  
-**Xi'an Jiaotong University**, *Xi'an, China*  
-**Sep 2021 – Present**
-
-### 🌍 Visiting Scholar  
-**Peter the Great St. Petersburg Polytechnic University**, *St. Petersburg, Russia*  
-**Oct 2020 – Jan 2021**
-
-### 🎓 M.Eng. · Energy & Power Engineering  
-**Xi'an University of Science and Technology**, *Xi'an, China*  
-**Sep 2018 – Jun 2021**
-
-### 🎓 B.E. · Energy & Power Engineering  
-**Xi'an University of Science and Technology**, *Xi'an, China*  
-**Sep 2014 – Jun 2018**
+zheng.gao.a6\[at\]tohoku.ac.jp | gaozheng\[at\]stu.xjtu.edu.cn  
 
 ---
 
-## 🔬 Research Interests
+### 🎓 Education & Research Experience
+
+####  Visiting Scholar  
+**Tohoku University**, *Sendai, Japan*  **Nov 2025 – Nov 2026**
+
+####  Ph.D. Candidate · Engineering Thermophysics  
+**Xi'an Jiaotong University**, *Xi'an, China*  **Sep 2021 – Present**
+
+####  Visiting Scholar  
+**Peter the Great St. Petersburg Polytechnic University**, *St. Petersburg, Russia*  **Oct 2020 – Jan 2021**
+
+####  M.Eng. · Energy & Power Engineering  
+**Xi'an University of Science and Technology**, *Xi'an, China*  **Sep 2018 – Jun 2021**
+
+####  B.E. · Energy & Power Engineering  
+**Xi'an University of Science and Technology**, *Xi'an, China*  **Sep 2014 – Jun 2018**
+
+---
+
+### 🔬 Research Interests
 
 - Machine Learning for Energy Systems  
 - Gas Adsorption & Separation  
