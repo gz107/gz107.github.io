@@ -1,112 +1,171 @@
+/* =========================================
+   Academic Homepage – Custom Style for gaozheng.netlify.app
+   Clean · Minimal · Professional
+   ========================================= */
+
 @import "./styles.css";
 
-
-:root{
-    --h-title-color:#3948d2;
+/* --------------------------
+   基础配色（偏学术低饱和度）
+--------------------------- */
+:root {
+    --h-title-color: #234a8b;       /* 学术蓝 */
+    --text-color: #1f1f1f;
+    --text-light: #555;
+    --bg-light: #fafafa;
+    --border-color: #ddd;
+    --max-width: 860px;
 }
 
+/* --------------------------
+   全局排版（更学术）
+--------------------------- */
+body {
+    font-family: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.72;
+    color: var(--text-color);
+    background: white;
+}
+
+h1, h2, h3 {
+    font-family: "Merriweather", "Georgia", serif;
+    font-weight: 500;
+    color: var(--h-title-color);
+}
+
+/* --------------------------
+   Header 更学术（去商业化）
+--------------------------- */
 .header {
-    border-bottom: solid 2px var(--bs-blue);
-    z-index: 10000;
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.6rem 0;
+    background: #ffffff;
 }
 
-.bg-bottom {
-    background-color: var(--h-title-color);
-}
-
+/* --------------------------
+   顶部 Banner 优化
+--------------------------- */
 .top-section {
     position: relative;
-    padding: 10rem 0;
+    padding: 5rem 0 4.5rem 0;
     background-position: center;
     background-size: cover;
-    height: 25rem;
-}
-
-.top-section h2 {
-    font-weight: 400;
-}
-
-.top-section .top-section-content {
-    position: relative;
-    z-index: 1;
+    height: 20rem;
 }
 
 .top-section:before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    inset: 0;
+    background: rgba(0, 0, 0, 0.28); /* 更柔和的遮罩 */
 }
 
-section header h2{
-    font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+.top-section h2 {
+    font-size: 2.6rem;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0.4px;
+}
+
+/* --------------------------
+   头像：学术更清爽
+--------------------------- */
+#avatar {
+    position: relative;
+    top: -70px;
+    float: right;
+    margin-left: 2rem;
+}
+
+#avatar img {
+    height: max(130px,min(200px,calc(100vw/7)));
+    border-radius: 4px;
+    border: 1px solid #ccc;        /* 去强阴影 */
+}
+
+/* mobile */
+@media screen and (max-width: 991px) {
+    #avatar {
+        float: none;
+        top: 0;
+        margin: 1rem 0;
+        text-align: center;
+    }
+}
+
+/* --------------------------
+   Section 标题
+--------------------------- */
+section header h2 {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
     color: var(--h-title-color);
-    font-size: 2.3rem;
-    line-height: 4rem;
 }
 
-section .main-body{
-    font-size: 1.3rem;
-    font-weight: 200;
-    line-height: 2.4rem;
+/* --------------------------
+   正文区域
+--------------------------- */
+section .main-body {
+    max-width: var(--max-width);
+    font-size: 1.15rem;
+    color: var(--text-light);
 }
 
-
-.bg-gradient-primary-to-secondary-light {
-    background: linear-gradient(45deg, #fcfcfc, #ffffff) !important;
+p {
+    margin-bottom: 1.15rem;
 }
 
+ul {
+    padding-left: 1.2rem;
+}
+
+a {
+    color: #1f55aa;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* --------------------------
+   背景区域：超浅灰替代渐变
+--------------------------- */
+.bg-gradient-primary-to-secondary-light,
 .bg-gradient-primary-to-secondary-gray {
-    background: linear-gradient(45deg, #f0f0f0, #f1f1f1) !important;
+    background: #f7f7f7 !important;
 }
 
+/* --------------------------
+   Publications（你的网站重点）
+--------------------------- */
+.pub-item {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
 
+.pub-item b {
+    color: var(--h-title-color);
+    font-weight: 500;
+}
 
+/* --------------------------
+   Info block（Email、Affiliation）
+--------------------------- */
+.info-block {
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+
+/* --------------------------
+   减小 UI 感 · 加强学术感
+--------------------------- */
 .on-top {
     position: relative;
-    z-index: 10000;
-}
-
-.top-bg {
-    background-position: center;
-    background-size: fill;
-    width: 100%;
-    height: 100%;
+    z-index: 10;
 }
 
 .top-bg::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    inset: 0;
+    background: rgba(0,0,0,0.2);
 }
-
-
-#avatar {
-    position: relative;
-    height: 0;
-    top:min(-65px,max(-100px,calc(-1*100vw/12)));
-    max-width: 55em;
-    margin: 0 1.5rem 0 0;
-    float: right;
-    z-index: 9000;
-}
-
-#avatar img {
-    height: max(130px,min(200px,calc(100vw/6)));
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-}
-
-@media screen and (max-width: 991px) {
-    #avatar {
-        margin: 0;
-    }
-}
-
-
