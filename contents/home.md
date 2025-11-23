@@ -18,25 +18,14 @@ I work at the interface of molecular modeling, machine learning, and energy syst
 gaozheng 𝑎𝑡 stu.xjtu.edu.cn
 
 ## Education
-### Ph.D., Engineering Thermophysics
 
-Xi'an Jiaotong University, Xi’an, China
-2021 – Present
+*Ph.D., Engineering Thermophysics* | Xi'an Jiaotong University, Xi’an, China | 2021 – Present
 
-### Visiting Scholar
+*Visiting Scholar* | Peter the Great St. Petersburg Polytechnic University, St. Petersburg, Russia | 2020 – 2021
 
-Peter the Great St. Petersburg Polytechnic University, St. Petersburg, Russia
-2020 – 2021
+*M.Eng., Energy & Power Engineering* | Xi'an University of Science and Technology, Xi’an, China | 2018 – 2021
 
-### M.Eng., Energy & Power Engineering
-
-Xi'an University of Science and Technology, Xi’an, China
-2018 – 2021
-
-### B.E., Energy & Power Engineering
-
-Xi'an University of Science and Technology, Xi’an, China
-2014 – 2018
+*B.E., Energy & Power Engineering* | Xi'an University of Science and Technology, Xi’an, China |2014 – 2018
 
 ## Research Interests
 
