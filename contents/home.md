@@ -5,41 +5,67 @@
 
 
 
-### 👋 About Me
+## About me
 
-I am currently pursuing a **Doctoral Degree in Power Engineering and Engineering Thermophysics**  at the **School of Energy and Power Engineering, Xi'an Jiaotong University, China**.  My research focuses on gas adsorption, gas separation, and data-driven molecular simulation.
+I am a Ph.D. candidate in Power Engineering and Engineering Thermophysics at
+Xi'an Jiaotong University.
 
+My research focuses on adsorption thermodynamics, gas separation, and data-driven molecular simulation of porous materials.
+I work at the interface of molecular modeling, machine learning, and energy systems, seeking to establish predictive structure–property relationships for adsorption-based technologies.
 
+## Contact
 
-### ✉️ Contact
+gaozheng 𝑎𝑡 stu.xjtu.edu.cn
 
-gaozheng\[at\]stu.xjtu.edu.cn  
+## Education
+### Ph.D., Engineering Thermophysics
 
+Xi'an Jiaotong University, Xi’an, China
+2021 – Present
 
+### Visiting Scholar
 
-### 🎓 Education & Research Experience
+Peter the Great St. Petersburg Polytechnic University, St. Petersburg, Russia
+2020 – 2021
 
+### M.Eng., Energy & Power Engineering
 
-####  Ph.D. Candidate · Engineering Thermophysics  
-**Xi'an Jiaotong University**, *Xi'an, China*  **Sep 2021 – Present**
+Xi'an University of Science and Technology, Xi’an, China
+2018 – 2021
 
-####  Visiting Scholar  
-**Peter the Great St. Petersburg Polytechnic University**, *St. Petersburg, Russia*  **Oct 2020 – Jan 2021**
+### B.E., Energy & Power Engineering
 
-####  M.Eng. · Energy & Power Engineering  
-**Xi'an University of Science and Technology**, *Xi'an, China*  **Sep 2018 – Jun 2021**
+Xi'an University of Science and Technology, Xi’an, China
+2014 – 2018
 
-####  B.E. · Energy & Power Engineering  
-**Xi'an University of Science and Technology**, *Xi'an, China*  **Sep 2014 – Jun 2018**
+## Research Interests
 
+Adsorption thermodynamics & kinetics
 
+Gas separation and purification
 
-### 🔬 Research Interests
+Hydrogen storage in porous materials
 
-- Machine Learning for Energy Systems  
-- Gas Adsorption & Separation  
-- Hydrogen Storage in Porous Materials  
-- Molecular Simulation  
-- Pressure Swing Adsorption (PSA)  
-- Heat and Mass Transfer  
+Molecular simulation (GCMC / MD)
 
+Machine learning for materials modeling
+
+Structure–property relationships of adsorbents
+
+PSA/TSA/ESA processes
+
+Multiphysics heat & mass transfer
+
+## Research Overview
+
+My research aims to elucidate how pore geometry, surface chemistry, and thermodynamic conditions jointly determine the adsorption behavior of gases in nanoporous materials. I integrate:
+
+Molecular simulation for microscopic adsorption mechanisms
+
+Machine learning for surrogate modeling and material screening
+
+Thermodynamic modeling for isotherm representation and prediction
+
+Transport modeling for process-level performance evaluation
+
+Ultimately, I focus on creating generalizable frameworks for adsorption-based hydrogen storage, carbon capture, and gas purification.
