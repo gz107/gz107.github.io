@@ -1,171 +1,92 @@
 /* =========================================
-   Academic Homepage – Custom Style for gaozheng.netlify.app
-   Clean · Minimal · Professional
+   Layout Enhancement · Academic Balanced Layout
    ========================================= */
 
-@import "./styles.css";
-
-/* --------------------------
-   基础配色（偏学术低饱和度）
---------------------------- */
-:root {
-    --h-title-color: #234a8b;       /* 学术蓝 */
-    --text-color: #1f1f1f;
-    --text-light: #555;
-    --bg-light: #fafafa;
-    --border-color: #ddd;
-    --max-width: 860px;
+/* 让所有内容居中并限制最大宽度（解决右侧大量空白） */
+.container,
+body > main,
+section .main-body {
+    max-width: 1200px !important;     /* 从 860px → 1200px，学术网站常用宽度 */
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
-/* --------------------------
-   全局排版（更学术）
---------------------------- */
-body {
-    font-family: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.72;
-    color: var(--text-color);
-    background: white;
+/* 论文区不宜过宽，控制在适合阅读的 780px */
+.publication-section,
+.pub-wrapper {
+    max-width: 780px;
+    margin: 0 auto;
 }
 
-h1, h2, h3 {
-    font-family: "Merriweather", "Georgia", serif;
-    font-weight: 500;
+/* Markdown 转换后 UL/paragraph 更协调 */
+.pub-item {
+    text-align: justify;
+    font-size: 1.06rem;
+    line-height: 1.75rem;
+}
+
+/* 让年份更突出 */
+.pub-year {
+    font-size: 1.35rem;
+    font-weight: 600;
     color: var(--h-title-color);
+    margin: 2.2rem 0 1rem;
+    border-left: 4px solid var(--h-title-color);
+    padding-left: 10px;
 }
 
-/* --------------------------
-   Header 更学术（去商业化）
---------------------------- */
-.header {
-    border-bottom: 1px solid var(--border-color);
-    padding: 0.6rem 0;
-    background: #ffffff;
-}
+/* =========================================
+   Avatar & Heading Balance
+   ========================================= */
 
-/* --------------------------
-   顶部 Banner 优化
---------------------------- */
-.top-section {
-    position: relative;
-    padding: 5rem 0 4.5rem 0;
-    background-position: center;
-    background-size: cover;
-    height: 20rem;
-}
-
-.top-section:before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.28); /* 更柔和的遮罩 */
-}
-
-.top-section h2 {
-    font-size: 2.6rem;
-    font-weight: 400;
-    color: white;
-    letter-spacing: 0.4px;
-}
-
-/* --------------------------
-   头像：学术更清爽
---------------------------- */
+/* 头像不要挤压文字，让两者更和谐 */
 #avatar {
-    position: relative;
-    top: -70px;
     float: right;
     margin-left: 2rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    top: -40px;     /* 原来 -70 太靠上，会遮挡标题 */
 }
 
-#avatar img {
-    height: max(130px,min(200px,calc(100vw/7)));
-    border-radius: 4px;
-    border: 1px solid #ccc;        /* 去强阴影 */
-}
-
-/* mobile */
-@media screen and (max-width: 991px) {
+/* 手机端自动置顶 */
+@media (max-width: 992px) {
     #avatar {
         float: none;
+        margin: 0 auto 1rem auto;
         top: 0;
-        margin: 1rem 0;
         text-align: center;
     }
 }
 
-/* --------------------------
-   Section 标题
---------------------------- */
+/* =========================================
+   Section Title 更居中、更稳重
+   ========================================= */
 section header h2 {
-    font-size: 2rem;
-    margin-bottom: 1.2rem;
-    color: var(--h-title-color);
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* --------------------------
-   正文区域
---------------------------- */
-section .main-body {
-    max-width: var(--max-width);
-    font-size: 1.15rem;
-    color: var(--text-light);
+/* =========================================
+   Improve vertical rhythm
+   ========================================= */
+section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
-p {
-    margin-bottom: 1.15rem;
+p, li {
+    margin-bottom: 0.9rem;
 }
 
-ul {
-    padding-left: 1.2rem;
-}
-
+/* 链接颜色保持学术风但降低跳跃感 */
 a {
-    color: #1f55aa;
+    color: #204f99;
+    text-decoration: none;
 }
 a:hover {
     text-decoration: underline;
-}
-
-/* --------------------------
-   背景区域：超浅灰替代渐变
---------------------------- */
-.bg-gradient-primary-to-secondary-light,
-.bg-gradient-primary-to-secondary-gray {
-    background: #f7f7f7 !important;
-}
-
-/* --------------------------
-   Publications（你的网站重点）
---------------------------- */
-.pub-item {
-    margin-bottom: 1rem;
-    line-height: 1.6;
-}
-
-.pub-item b {
-    color: var(--h-title-color);
-    font-weight: 500;
-}
-
-/* --------------------------
-   Info block（Email、Affiliation）
---------------------------- */
-.info-block {
-    font-size: 1.1rem;
-    line-height: 2rem;
-}
-
-/* --------------------------
-   减小 UI 感 · 加强学术感
---------------------------- */
-.on-top {
-    position: relative;
-    z-index: 10;
-}
-
-.top-bg::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.2);
 }
