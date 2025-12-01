@@ -1,19 +1,32 @@
 # ===============================
-#   Basic Site Info
+# Basic Site Info (Used by JS)
 # ===============================
-
 title: "Zheng Gao's Homepage"
 page-top-title: "Zheng Gao"
-#top-section-bg-text: "Unity of knowledge and action"
-home-subtitle: "Zheng Gao | 高正"
+top-section-bg-text: "Unity of knowledge and action"
+home-subtitle: "Zheng Gao｜高正"
+
 copyright-text: "© Zheng Gao 2023–2024. All Rights Reserved."
 
-url: "https://gz107.github.io"
-baseurl: ""
-
-description: "Academic homepage of Zheng Gao."
+# ===============================
+# Author Information (Not required but useful)
+# ===============================
+author:
+  name: "Zheng Gao"
+  name_cn: "高正"
+  email: "zhenggao@stu.xjtu.edu.cn"
+  affiliation: "School of Chemical Engineering"
 
 # ===============================
-#   Copyright
+# SEO (Optional but recommended)
 # ===============================
-copyright-text: "© Zheng Gao 2023–2024. All Rights Reserved."
+description: "Academic homepage of Zheng Gao. Research in adsorption, separation, nanoporous materials, and molecular simulation."
+keywords: ["adsorption", "separation", "porous materials", "MOF", "COF", "DFT", "GCMC", "Zheng Gao"]
+
+# ===============================
+# Social Links
+# ===============================
+social:
+  github: "https://github.com/gz107"
+  researchgate: "https://www.researchgate.net/profile/Zheng-Gao-31"
+  google_scholar: "https://scholar.google.com/"
