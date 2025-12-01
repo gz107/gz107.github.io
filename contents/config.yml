@@ -1,5 +1,51 @@
-title: Zheng Gao's Homepage
-page-top-title: Zheng Gao
-top-section-bg-text: Unity of knowledge and action
-home-subtitle: Zheng Gao&ensp;|&ensp;高正
-copyright-text: '&copy; Zheng Gao 2023-2024. All Rights Reserved.'
+# ===============================
+#   Basic Site Info
+# ===============================
+title: "Zheng Gao's Homepage"
+page-top-title: "Zheng Gao"
+#top-section-bg-text: "Unity of knowledge and action"
+home-subtitle: "Zheng Gao｜高正"
+
+description: "The academic homepage of Zheng Gao. Research focus on adsorption, separation, porous materials, DFT, and molecular simulation."
+keywords: ["Zheng Gao", "adsorption", "porous materials", "MOF", "COF", "DFT", "GCMC"]
+
+url: "https://gz107.github.io"
+baseurl: ""   # GitHub Pages 主目录必须为空
+
+# ===============================
+#   Author
+# ===============================
+author:
+  name: "Zheng Gao"
+  name_cn: "高正"
+  email: "gaozheng@stu.xjtu.edu.cn"
+  affiliation: "School of Chemical Engineering"
+
+# ===============================
+#   Social Links
+# ===============================
+social:
+  github: "https://github.com/gz107"
+  researchgate: "https://www.researchgate.net/profile/Zheng-Gao-31"
+  google_scholar: https://scholar.google.com/citations?user=8JTVl_MAAAAJ&hl=en"
+
+# ===============================
+#   Plugins (optional, but recommended)
+# ===============================
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# ===============================
+#   Markdown
+# ===============================
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# ===============================
+#   Copyright
+# ===============================
+copyright-text: "© Zheng Gao 2023–2024. All Rights Reserved."
+
