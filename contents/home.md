@@ -19,13 +19,17 @@ gaozheng 𝑎𝑡 stu.xjtu.edu.cn
 
 ## Education
 
-*Ph.D., Engineering Thermophysics* | Xi'an Jiaotong University, Xi’an, China | 2021 – Present
+*Visiting students* | National University of Singapore, Singapore | 2006.03 – Present
 
-*Visiting Scholar* | Peter the Great St. Petersburg Polytechnic University, St. Petersburg, Russia | 2020 – 2021
+*Visiting students* | Tohoku University, Sendai,Japan | 2025.11 – 2026.02
 
-*M.Eng., Energy & Power Engineering* | Xi'an University of Science and Technology, Xi’an, China | 2018 – 2021
+*Ph.D., Engineering Thermophysics* | Xi'an Jiaotong University, Xi’an, China | 2021.09 – Present
 
-*B.E., Energy & Power Engineering* | Xi'an University of Science and Technology, Xi’an, China |2014 – 2018
+*Visiting students* | Peter the Great St. Petersburg Polytechnic University, St. Petersburg, Russia | 2019.10 – 2020.01
+
+*M.Eng., Energy & Power Engineering* | Xi'an University of Science and Technology, Xi’an, China | 2018.09 – 2021.06
+
+*B.E., Energy & Power Engineering* | Xi'an University of Science and Technology, Xi’an, China |2014.09 – 2018.06
 
 ## Research Interests
 

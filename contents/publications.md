@@ -1,11 +1,13 @@
 ## Journal Papers
 
 ### 2025
-1. W. Gao, Z. Qu, **Z. Gao**, J. Zhang, W. Yang, "Multi-step numerical method for the hydrogen storage performance optimisation of metal hydride reactors". *Journal of Energy Storage*, 2025, 133, 118000. [Link](https://www.sciencedirect.com/science/article/pii/S2352152X25027136)
+4. W Gao, Z Qu, **Z. Gao**, Z Tang, J Zhang, W Yang, "Theoretical models for the effective thermal conductivity of metal hydride bed under multiple heat conduction mechanisms". *International Journal of Heat and Mass Transfer*, 2026, 263,128657. [Link](https://www.sciencedirect.com/science/article/pii/S0017931026003339)
+
+3. W. Gao, Z. Qu, **Z. Gao**, J. Zhang, W. Yang, "Multi-step numerical method for the hydrogen storage performance optimisation of metal hydride reactors". *Journal of Energy Storage*, 2025, 133, 118000. [Link](https://www.sciencedirect.com/science/article/pii/S2352152X25027136)
 
 2. **Z. Gao**, H. Wang, Z.-G. Qu, "Data-driven high-throughput screening of anion-pillared metal-organic frameworks for hydrogen storage". *CIESC Journal*, 2025, 76(08), 4259–4272. [Link](https://hgxb.cip.com.cn/CN/10.11949/0438-1157.20250178)
 
-3. **Z. Gao**, H. Wang, Z.-G. Qu, Z. Tian, "High-throughput screening of covalent organic framework membranes for hydrogen separation from hydrogen-blended natural gas". *Applied Thermal Engineering*, 2025, 271, 126333. [Link](https://www.sciencedirect.com/science/article/pii/S1359431125009251)
+1. **Z. Gao**, H. Wang, Z.-G. Qu, Z. Tian, "High-throughput screening of covalent organic framework membranes for hydrogen separation from hydrogen-blended natural gas". *Applied Thermal Engineering*, 2025, 271, 126333. [Link](https://www.sciencedirect.com/science/article/pii/S1359431125009251)
 
 ### 2024
 1. T. Zhang, J.-J. Lv, Y. Dang, **Z. Gao**, H. Wang*, J.-W. Cao, G.-H. Zhang, H. Rao, F.-P. Pan, K.-J. Chen*, "High-throughput computational screening-driven porous material discovery for benchmark propylene/propane separation". *Adv. Funct. Mater.*, 2024, 2412457. [Link](https://onlinelibrary.wiley.com/action/showCitFormats?doi=10.1002%2Fadfm.202412457)
