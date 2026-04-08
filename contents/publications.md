@@ -1,7 +1,9 @@
 ## Journal Papers
+### 2026
+
+1. W Gao, Z Qu, **Z. Gao**, Z Tang, J Zhang, W Yang, "Theoretical models for the effective thermal conductivity of metal hydride bed under multiple heat conduction mechanisms". *International Journal of Heat and Mass Transfer*, 2026, 263,128657. [Link](https://www.sciencedirect.com/science/article/pii/S0017931026003339)
 
 ### 2025
-4. W Gao, Z Qu, **Z. Gao**, Z Tang, J Zhang, W Yang, "Theoretical models for the effective thermal conductivity of metal hydride bed under multiple heat conduction mechanisms". *International Journal of Heat and Mass Transfer*, 2026, 263,128657. [Link](https://www.sciencedirect.com/science/article/pii/S0017931026003339)
 
 3. W. Gao, Z. Qu, **Z. Gao**, J. Zhang, W. Yang, "Multi-step numerical method for the hydrogen storage performance optimisation of metal hydride reactors". *Journal of Energy Storage*, 2025, 133, 118000. [Link](https://www.sciencedirect.com/science/article/pii/S2352152X25027136)
 
