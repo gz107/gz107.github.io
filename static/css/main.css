@@ -28,12 +28,12 @@ body {
     color: var(--text-color);
     background: white;
 }
+
 h1, h2, h3 {
-    font-family: "Merriweather", "Georgia", serif;
-    font-weight: 500;
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700; /* 加粗 */
     color: var(--h-title-color);
 }
-
 /* --------------------------
    Header 更学术（去商业化）
 --------------------------- */
