@@ -20,13 +20,14 @@
 /* --------------------------
    全局排版（更学术）
 --------------------------- */
+
 body {
-    font-family: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+    /* 使用系统原生字体栈，苹果设备会调用 San Francisco (SF Pro) */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.72;
     color: var(--text-color);
     background: white;
 }
-
 h1, h2, h3 {
     font-family: "Merriweather", "Georgia", serif;
     font-weight: 500;
@@ -261,4 +262,103 @@ a {
 }
 a:hover {
     text-decoration: underline;
+}
+
+
+
+.academic-footer {
+    /* 使用您前面定义的学术蓝 var(--h-title-color) 或者是深蓝色 #00458b */
+    background-color: var(--h-title-color); 
+    color: #ffffff;
+    padding: 3.5rem 0 1.5rem;
+    margin-top: 5rem; /* 与正文拉开距离 */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.footer-container {
+    max-width: 1000px; /* 居中容器宽度 */
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* 两列弹性布局 */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* 手机端自动折行 */
+    gap: 3rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15); /* 半透明底线 */
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 280px;
+}
+
+/* 底部标题栏 (覆盖全局 h3 样式) */
+.academic-footer h3 {
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8); /* 标题下方短横线 */
+    display: inline-block;
+    padding-bottom: 0.4rem;
+    font-family: inherit; 
+}
+
+.footer-col p {
+    margin-bottom: 0.7rem;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.85); /* 柔和的白色 */
+}
+
+/* 底部链接样式 */
+.footer-col a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* 圆形社交图标列 */
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 1.2rem;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background: rgba(255, 255, 255, 0.15); /* 半透明圆形背景 */
+    border-radius: 50%;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background 0.3s;
+    font-size: 1.1rem;
+}
+
+.social-icons a:hover {
+    background: rgba(255, 255, 255, 0.35); /* 鼠标悬浮变亮 */
+}
+
+/* 最底部版权和统计区域 */
+.footer-bottom {
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-bottom .stats {
+    margin-bottom: 1rem;
+    font-weight: 500;
 }
