@@ -1,27 +1,58 @@
 # ===============================
-# Basic Site Info (Used by JS)
+# Basic Site Info
 # ===============================
-title: "Zheng Gao's Homepage"
+title: "Zheng Gao | Academic Homepage"
 page-top-title: "Zheng Gao"
-#top-section-bg-text: "Unity of knowledge and action"
+top-section-bg-text: "Adsorption · Hydrogen · Porous Materials"
 home-subtitle: "Zheng Gao｜高正"
-
-copyright-text: "© Zheng Gao 2023–2024. All Rights Reserved."
+home-description: "Ph.D. Candidate in Power Engineering and Engineering Thermophysics at Xi'an Jiaotong University."
+copyright-text: "© 2026 Zheng Gao. All Rights Reserved."
 
 # ===============================
-# Author Information (Not required but useful)
+# Author Information
 # ===============================
 author:
   name: "Zheng Gao"
   name_cn: "高正"
-  email: "zhenggao@stu.xjtu.edu.cn"
-  affiliation: "School of Chemical Engineering"
+  email: "gaozheng@stu.xjtu.edu.cn"
+  affiliation: "Xi'an Jiaotong University"
+  role: "Ph.D. Candidate"
+  location: "Xi'an, China / Singapore"
 
 # ===============================
-# SEO (Optional but recommended)
+# Navigation
 # ===============================
-description: "Academic homepage of Zheng Gao. Research in adsorption, separation, nanoporous materials, and molecular simulation."
-keywords: ["adsorption", "separation", "porous materials", "MOF", "COF", "DFT", "GCMC", "Zheng Gao"]
+navbar:
+  - name: "About Me"
+    url: "#about-me"
+  - name: "Research"
+    url: "#research-interests"
+  - name: "Projects"
+    url: "projects"
+  - name: "Publications"
+    url: "publications"
+  - name: "Awards"
+    url: "awards"
+  - name: "Contact"
+    url: "#contact"
+
+# ===============================
+# SEO
+# ===============================
+description: "Academic homepage of Zheng Gao. Research in adsorption thermodynamics, gas separation, hydrogen storage, porous materials, molecular simulation, and machine learning."
+keywords:
+  - adsorption
+  - hydrogen storage
+  - hydrogen purification
+  - porous materials
+  - MOF
+  - COF
+  - zeolite
+  - GCMC
+  - molecular dynamics
+  - machine learning
+  - pressure swing adsorption
+  - Zheng Gao
 
 # ===============================
 # Social Links
@@ -29,4 +60,4 @@ keywords: ["adsorption", "separation", "porous materials", "MOF", "COF", "DFT", 
 social:
   github: "https://github.com/gz107"
   researchgate: "https://www.researchgate.net/profile/Zheng-Gao-31"
-  google_scholar: "https://scholar.google.com/"
+  google_scholar: "https://scholar.google.com/citations?user=8JTVl_MAAAAJ&hl=en"
