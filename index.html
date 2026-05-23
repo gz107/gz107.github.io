@@ -1,131 +1,127 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Zheng Gao | Xi'an Jiaotong University</title>
-<meta name="description" content="Academic homepage of Zheng Gao. Research in adsorption, separation, nanoporous materials, and molecular simulation." />
-<meta name="keywords" content="adsorption, separation, porous materials, MOF, COF, DFT, GCMC, Zheng Gao" />
-
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
-<!-- Font Awesome for icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
-<style>
-  /* ── Reset & Tokens ───────────────────────────────────────── */
+/* ── Reset & Tokens ───────────────────────────────────────── */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --blue-dark:   #1a3a6e;
-    --blue-mid:    #234a8b;
-    --blue-light:  #3d6abf;
-    --blue-pale:   #e8eef8;
-    --blue-faint:  #f3f6fc;
+    /* 核心色板 - 调整为更精致的学术蓝 */
+    --blue-dark:   #102a53; /* 更深邃 */
+    --blue-mid:    #1d4ed8; /* 主色调，更明亮一点 */
+    --blue-light:  #60a5fa; /* 强调色 */
+    --blue-pale:   #eff6ff; /* 极淡的蓝背景 */
+    --blue-faint:  #f8fafc; /* 接近白的蓝背景 */
 
-    --ink:         #1c1c1e;
-    --ink-mid:     #3a3a3c;
-    --ink-light:   #6e6e73;
-    --ink-faint:   #aeaeb2;
+    /* 文字颜色 */
+    --ink:         #111827;
+    --ink-mid:     #4b5563;
+    --ink-light:   #9ca3af;
+    --ink-faint:   #d1d5db;
 
-    --border:      #dde3ef;
+    /* UI 元素 */
+    --border:      #e2e8f0;
     --surface:     #ffffff;
-    --bg:          #f7f8fc;
+    --bg:          #ffffff; /* 改为纯白背景，让内容更突出 */
 
+    /* 字体 */
     --serif:  'EB Garamond', Georgia, serif;
-    --sans:   'DM Sans', system-ui, sans-serif;
+    --sans:   'DM Sans', system-ui, -apple-system, sans-serif;
     --mono:   'JetBrains Mono', monospace;
 
+    /* 圆角与阴影 */
     --radius-sm:  6px;
-    --radius-md:  12px;
-    --radius-lg:  20px;
+    --radius-md:  16px; /* 增大圆角 */
+    --radius-lg:  24px;
 
-    --shadow-sm: 0 1px 4px rgba(0,0,0,.06);
-    --shadow-md: 0 4px 16px rgba(0,0,0,.08);
-    --shadow-lg: 0 8px 32px rgba(0,0,0,.10);
+    /* 更细致的柔和阴影 */
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+    --shadow-md: 0 10px 15px -3px rgba(0,0,0,0.05), 0 4px 6px -2px rgba(0,0,0,0.02);
+    --shadow-lg: 0 20px 25px -5px rgba(0,0,0,0.08), 0 10px 10px -5px rgba(0,0,0,0.04);
 
-    --max: 980px;
+    --max: 1040px; /* 稍微放宽最大宽度 */
+    --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; font-size: 16px; }
 
   body {
     font-family: var(--sans);
-    font-size: 16px;
-    line-height: 1.7;
-    color: var(--ink);
+    line-height: 1.8; /* 增加行高 */
+    color: var(--ink-mid); /* body 使用次级文字颜色，减少视觉疲劳 */
     background: var(--bg);
     -webkit-font-smoothing: antialiased;
   }
+
+  /* 标题排版微调 */
+  h1, h2, h3, h4 { color: var(--ink); font-weight: 600; }
 
   /* ── Nav ──────────────────────────────────────────────────── */
   nav {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(255,255,255,0.88);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(20px); /* 增加模糊度 */
+    -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border);
     padding: 0 2rem;
-    height: 56px;
+    height: 64px; /* 稍微加高 */
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: var(--transition);
   }
 
   .nav-brand {
     font-family: var(--serif);
-    font-size: 1.15rem;
-    font-weight: 500;
+    font-size: 1.25rem;
+    font-weight: 600;
     color: var(--blue-dark);
-    letter-spacing: 0.02em;
+    letter-spacing: -0.01em;
     text-decoration: none;
   }
 
   .nav-links {
     display: flex;
-    gap: 0.2rem;
+    gap: 0.5rem; /* 增加间距 */
     list-style: none;
   }
 
   .nav-links a {
-    font-size: 0.88rem;
+    font-size: 0.9rem;
     font-weight: 500;
-    color: var(--ink-light);
+    color: var(--ink-mid);
     text-decoration: none;
-    padding: 0.4rem 0.85rem;
-    border-radius: var(--radius-sm);
-    transition: background 0.2s, color 0.2s;
+    padding: 0.5rem 1rem;
+    border-radius: 999px; /* 全圆角链接 */
+    transition: var(--transition);
   }
 
   .nav-links a:hover {
-    background: var(--blue-faint);
+    background: var(--blue-pale);
     color: var(--blue-mid);
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 768px) {
     .nav-links { display: none; }
   }
 
   /* ── Hero ─────────────────────────────────────────────────── */
   .hero {
-    background: linear-gradient(160deg, #1a3a6e 0%, #234a8b 55%, #2d5ca5 100%);
-    padding: 5rem 2rem 4rem;
+    /* 更优雅复杂的渐变背景 */
+    background:
+      radial-gradient(circle at 10% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 40%),
+      radial-gradient(circle at 90% 80%, rgba(37, 99, 235, 0.1) 0%, transparent 50%),
+      var(--blue-dark);
+    padding: 7rem 2rem 6rem; /* 显著增加上下 padding */
     position: relative;
     overflow: hidden;
   }
 
-  .hero::before {
+  /* 添加一个淡淡的微妙纹理 */
+  .hero::after {
     content: '';
     position: absolute;
     inset: 0;
-    background-image:
-      radial-gradient(ellipse at 70% 30%, rgba(255,255,255,0.06) 0%, transparent 60%),
-      radial-gradient(ellipse at 20% 80%, rgba(255,255,255,0.04) 0%, transparent 50%);
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9V16h9v-1h-9V6h9V5h-9V0h4v1h-4v4h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h4v1h-4v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h4v1h-4v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h4v1h-4v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h4v1h-4v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h4v1h-4v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h4v1h-4v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h4v1h-4v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h4v1h-4v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h4v1h-4v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9h9v1h-9v9'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     pointer-events: none;
   }
 
@@ -134,101 +130,96 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
-    gap: 3.5rem;
+    gap: 4rem; /* 增加间距 */
     position: relative;
     z-index: 1;
   }
 
-  .hero-avatar {
-    flex-shrink: 0;
-  }
-
   .hero-avatar img {
-    width: 160px;
-    height: 160px;
-    border-radius: var(--radius-md);
-    border: 3px solid rgba(255,255,255,0.25);
+    width: 170px; /* 加大头像 */
+    height: 170px;
+    border-radius: 50%; /* 改为圆形头像，更现代 */
+    border: 6px solid rgba(255,255,255,0.15); /* 调整边框 */
+    box-shadow: var(--shadow-lg); /* 添加强阴影 */
     object-fit: cover;
     display: block;
+    transition: var(--transition);
   }
 
-  .hero-avatar-placeholder {
-    width: 160px;
-    height: 160px;
-    border-radius: var(--radius-md);
-    border: 3px solid rgba(255,255,255,0.25);
-    background: rgba(255,255,255,0.12);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3.5rem;
-    color: rgba(255,255,255,0.5);
+  .hero-avatar img:hover {
+    transform: scale(1.05) rotate(2deg); /* 增加悬停趣味性 */
+    border-color: rgba(255,255,255,0.3);
   }
 
   .hero-text h1 {
     font-family: var(--serif);
-    font-size: 2.8rem;
+    font-size: 3.2rem; /* 加大字号 */
     font-weight: 500;
     color: #ffffff;
-    line-height: 1.15;
-    margin-bottom: 0.35rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
   }
 
   .hero-text .cn-name {
     font-family: var(--serif);
-    font-size: 1.4rem;
-    color: rgba(255,255,255,0.65);
-    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 1.2rem;
     display: block;
   }
 
   .hero-text .role {
-    font-size: 1.05rem;
-    color: rgba(255,255,255,0.88);
-    margin-bottom: 0.3rem;
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.95);
+    margin-bottom: 0.4rem;
+    font-weight: 400;
   }
 
   .hero-text .affil {
-    font-size: 0.95rem;
-    color: rgba(255,255,255,0.65);
-    margin-bottom: 1.4rem;
+    font-size: 1rem;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 2rem;
+    font-weight: 300;
   }
 
   .hero-badges {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.6rem;
+    gap: 0.75rem;
   }
 
   .badge {
     display: inline-flex;
     align-items: center;
-    gap: 0.4rem;
-    padding: 0.38rem 0.85rem;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem; /* 增加 padding */
     border-radius: 999px;
-    font-size: 0.82rem;
+    font-size: 0.85rem;
     font-weight: 500;
-    background: rgba(255,255,255,0.14);
-    color: rgba(255,255,255,0.92);
-    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.95);
+    border: 1px solid rgba(255,255,255,0.15);
     text-decoration: none;
-    transition: background 0.2s, border-color 0.2s;
+    transition: var(--transition);
   }
 
   .badge:hover {
-    background: rgba(255,255,255,0.24);
-    border-color: rgba(255,255,255,0.4);
-    text-decoration: none;
+    background: rgba(255,255,255,0.2);
+    border-color: rgba(255,255,255,0.3);
+    transform: translateY(-2px); /* 悬停浮起 */
     color: #fff;
   }
 
-  .badge i { font-size: 0.85rem; }
+  .badge i { font-size: 1rem; color: var(--blue-light); } /* 图标着色 */
 
-  @media (max-width: 680px) {
-    .hero-inner { flex-direction: column; text-align: center; gap: 1.8rem; }
+  @media (max-width: 768px) {
+    .hero { padding: 4rem 1.5rem; }
+    .hero-inner { flex-direction: column; text-align: center; gap: 2rem; }
     .hero-badges { justify-content: center; }
-    .hero-text h1 { font-size: 2.2rem; }
-    .hero-avatar img, .hero-avatar-placeholder { width: 120px; height: 120px; }
+    .hero-text h1 { font-size: 2.5rem; }
+    .hero-avatar img { width: 140px; height: 140px; }
   }
 
   /* ── Layout ───────────────────────────────────────────────── */
@@ -239,29 +230,29 @@
   }
 
   section {
-    padding: 4rem 0;
+    padding: 6rem 0; /* 显著增加 section 上下间距 */
   }
 
-  section + section {
-    border-top: 1px solid var(--border);
+  section:nth-child(even) {
+    background-color: var(--blue-faint); /* 交替背景色 */
   }
 
   .section-label {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    font-size: 0.78rem;
+    gap: 0.6rem;
+    font-size: 0.8rem;
     font-weight: 600;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--blue-mid);
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.75rem;
   }
 
   .section-label::before {
     content: '';
     display: inline-block;
-    width: 18px;
+    width: 24px;
     height: 2px;
     background: var(--blue-mid);
     border-radius: 999px;
@@ -269,891 +260,397 @@
 
   h2.section-title {
     font-family: var(--serif);
-    font-size: 2rem;
+    font-size: 2.5rem; /* 加大标题 */
     font-weight: 500;
     color: var(--blue-dark);
-    margin-bottom: 2rem;
-    line-height: 1.25;
+    margin-bottom: 3rem; /* 增加下方间距 */
+    line-height: 1.2;
+    letter-spacing: -0.01em;
   }
 
   /* ── About ────────────────────────────────────────────────── */
   .about-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    grid-template-columns: 1.2fr 1fr; /* 调整比例 */
+    gap: 4rem; /* 增加间距 */
     align-items: start;
   }
 
   .about-text p {
     color: var(--ink-mid);
-    margin-bottom: 1rem;
-    font-size: 1.02rem;
+    margin-bottom: 1.5rem; /* 增加段落间距 */
+    font-size: 1.05rem;
     line-height: 1.8;
   }
 
+  .about-text strong {
+    color: var(--blue-dark);
+    font-weight: 600;
+  }
+
   .contact-row {
-    display: flex;
+    display: inline-flex; /* 视觉上缩小 */
     align-items: center;
-    gap: 0.6rem;
-    font-size: 0.93rem;
-    color: var(--ink-mid);
-    margin-top: 1.2rem;
-    padding: 0.8rem 1rem;
-    background: var(--blue-faint);
-    border-radius: var(--radius-md);
-    border: 1px solid var(--blue-pale);
+    gap: 0.7rem;
+    font-size: 0.95rem;
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.2rem;
+    background: var(--blue-pale);
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(59, 130, 246, 0.1);
   }
 
   .contact-row i { color: var(--blue-mid); font-size: 1rem; }
-  .contact-row a { color: var(--blue-mid); text-decoration: none; font-weight: 500; }
-  .contact-row a:hover { text-decoration: underline; }
+  .contact-row a { color: var(--blue-mid); text-decoration: none; font-weight: 500; transition: var(--transition); }
+  .contact-row a:hover { color: var(--blue-dark); text-decoration: underline; }
 
-  /* Education list */
-  .edu-list { list-style: none; }
-
-  .edu-item {
-    display: flex;
-    gap: 1rem;
-    padding: 0.9rem 0;
-    border-bottom: 1px solid var(--border);
+  /* 优雅的时间线样式 */
+  .edu-list {
+    list-style: none;
+    position: relative;
+    padding-left: 1.5rem;
   }
 
-  .edu-item:last-child { border-bottom: none; }
+  /* 时间线竖线 */
+  .edu-list::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    width: 2px;
+    background: var(--border);
+  }
 
+  .edu-item {
+    position: relative;
+    padding-bottom: 2rem; /* 增加每项间距 */
+  }
+
+  .edu-item:last-child { padding-bottom: 0; border: none;}
+
+  /* 时间线圆点 */
   .edu-dot {
-    width: 10px;
-    height: 10px;
+    position: absolute;
+    left: -1.5rem;
+    top: 0.35rem;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
-    background: var(--blue-mid);
-    margin-top: 0.45rem;
-    flex-shrink: 0;
+    background: var(--surface);
+    border: 3px solid var(--blue-mid);
+    z-index: 1;
+    transform: translateX(-50%);
+    transition: var(--transition);
+  }
+
+  .edu-item:hover .edu-dot {
+    background: var(--blue-mid); /* 悬停实心 */
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
   }
 
   .edu-degree {
     font-weight: 600;
-    font-size: 0.93rem;
+    font-size: 1rem;
     color: var(--ink);
-    margin-bottom: 0.15rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.4;
   }
 
   .edu-school {
-    font-size: 0.88rem;
-    color: var(--ink-light);
+    font-size: 0.9rem;
+    color: var(--ink-mid);
+    margin-bottom: 0.2rem;
   }
 
   .edu-period {
-    font-size: 0.82rem;
-    color: var(--ink-faint);
+    font-size: 0.85rem;
+    color: var(--ink-light);
     font-family: var(--mono);
-    margin-top: 0.1rem;
   }
 
-  @media (max-width: 720px) {
-    .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+  @media (max-width: 850px) {
+    .about-grid { grid-template-columns: 1fr; gap: 3rem; }
   }
 
   /* ── Research Interests ───────────────────────────────────── */
-  #research { background: var(--surface); }
-
   .research-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 调大最小宽度 */
+    gap: 1.5rem;
   }
 
   .research-card {
-    padding: 1.4rem 1.2rem;
-    background: var(--bg);
+    padding: 2rem; /* 增加 padding */
+    background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius-md);
-    transition: box-shadow 0.25s, border-color 0.25s, transform 0.25s;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm); /* 添加基础阴影 */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .research-card:hover {
-    box-shadow: var(--shadow-md);
-    border-color: #b3c4e8;
-    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg); /* 强悬停阴影 */
+    border-color: rgba(59, 130, 246, 0.2);
+    transform: translateY(-5px) scale(1.01);
   }
 
   .research-icon {
-    width: 44px;
-    height: 44px;
-    border-radius: var(--radius-sm);
+    width: 56px; /* 加大图标区域 */
+    height: 56px;
+    border-radius: 12px;
     background: var(--blue-pale);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(59, 130, 246, 0.1);
+    transition: var(--transition);
+  }
+
+  .research-card:hover .research-icon {
+    background: var(--blue-mid);
+    transform: rotate(-5deg);
   }
 
   .research-icon i {
     color: var(--blue-mid);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    transition: var(--transition);
+  }
+
+  .research-card:hover .research-icon i {
+    color: #ffffff;
   }
 
   .research-card h3 {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     font-weight: 600;
-    color: var(--blue-dark);
-    margin-bottom: 0.5rem;
+    color: var(--ink);
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
   }
 
   .research-card p {
-    font-size: 0.87rem;
-    color: var(--ink-light);
-    line-height: 1.6;
+    font-size: 0.95rem;
+    color: var(--ink-mid);
+    line-height: 1.7;
   }
 
   /* ── Publications ─────────────────────────────────────────── */
-  .pub-year-group { margin-bottom: 2.5rem; }
+  .pub-year-group { margin-bottom: 3.5rem; } /* 增加组间距 */
 
   .pub-year-label {
-    font-family: var(--mono);
-    font-size: 0.82rem;
-    font-weight: 500;
-    color: var(--blue-mid);
-    letter-spacing: 0.08em;
-    margin-bottom: 1rem;
-    padding: 0.3rem 0.7rem;
-    background: var(--blue-faint);
-    border-radius: var(--radius-sm);
-    border-left: 3px solid var(--blue-mid);
-    display: inline-block;
+    font-family: var(--serif); /* 改用 Serif 字体，更有质感 */
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--blue-dark);
+    margin-bottom: 1.5rem;
+    display: block;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+
+  .pub-year-label::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 3px;
+    background: var(--blue-light);
+    border-radius: 999px;
   }
 
   .pub-list { list-style: none; }
 
   .pub-item {
-    padding: 1.1rem 1.2rem;
-    margin-bottom: 0.8rem;
+    padding: 1.5rem 1.8rem; /* 增加 padding */
+    margin-bottom: 1rem;
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    font-size: 0.93rem;
+    border-radius: var(--radius-sm); /* 出于出版物列表的整洁，使用小圆角 */
+    font-size: 0.98rem;
     line-height: 1.7;
     color: var(--ink-mid);
-    transition: box-shadow 0.2s, border-color 0.2s;
-    position: relative;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
   }
 
   .pub-item:hover {
-    box-shadow: var(--shadow-sm);
-    border-color: #c4d2ee;
+    box-shadow: var(--shadow-md);
+    border-color: rgba(59, 130, 246, 0.15);
+    transform: translateX(5px); /* 悬停右移 */
   }
 
   .pub-item .pub-me {
     font-weight: 600;
-    color: var(--blue-dark);
+    color: var(--blue-mid); /* 突出自己 */
+    text-decoration: underline dotted; /* 添加下划线强调 */
   }
 
   .pub-item .pub-journal {
     font-style: italic;
-    color: var(--ink-light);
+    color: var(--ink); /* 杂志名加深颜色 */
+    font-weight: 500;
   }
 
   .pub-item a.pub-link {
     display: inline-flex;
     align-items: center;
-    gap: 0.3rem;
-    margin-top: 0.5rem;
-    font-size: 0.82rem;
-    font-weight: 500;
+    gap: 0.4rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
     color: var(--blue-mid);
     text-decoration: none;
-    padding: 0.22rem 0.65rem;
+    padding: 0.4rem 1rem;
     border: 1px solid var(--blue-pale);
     border-radius: 999px;
     background: var(--blue-faint);
-    transition: background 0.2s, border-color 0.2s;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
 
   .pub-item a.pub-link:hover {
-    background: var(--blue-pale);
-    border-color: var(--blue-light);
+    background: var(--blue-mid);
+    color: #ffffff;
+    border-color: var(--blue-mid);
   }
 
   .pub-tag {
     display: inline-block;
     font-size: 0.75rem;
     font-weight: 600;
-    padding: 0.15rem 0.55rem;
+    padding: 0.2rem 0.7rem;
     border-radius: 999px;
-    background: #fff3cd;
-    color: #856404;
-    border: 1px solid #ffd970;
-    margin-left: 0.5rem;
+    background: #fef3c7; /* 调整黄色的精致度 */
+    color: #92400e;
+    border: 1px solid #fde68a;
+    margin-left: 0.75rem;
     vertical-align: middle;
   }
 
-  /* Conference papers */
-  .conf-list { list-style: none; }
-
-  .conf-item {
-    padding: 0.9rem 1.2rem;
-    margin-bottom: 0.7rem;
+  /* ── Projects & Awards ────────────────────────────────────── */
+  /* 复用 research card 的样式让界面统一 */
+  .project-card, .award-item_alt {
+    padding: 2rem;
     background: var(--surface);
     border: 1px solid var(--border);
-    border-left: 3px solid var(--blue-light);
-    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-    font-size: 0.92rem;
-    line-height: 1.65;
-    color: var(--ink-mid);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    margin-bottom: 1.5rem;
   }
 
-  .conf-type {
-    display: inline-block;
-    font-size: 0.75rem;
-    font-weight: 600;
-    padding: 0.15rem 0.55rem;
-    border-radius: 999px;
-    background: var(--blue-pale);
-    color: var(--blue-dark);
-    margin-top: 0.4rem;
+  .project-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-3px);
   }
-
-  /* ── Projects ─────────────────────────────────────────────── */
-  #projects { background: var(--surface); }
 
   .project-period {
-    font-family: var(--serif);
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: var(--blue-dark);
-    margin-bottom: 1.2rem;
-    margin-top: 2rem;
-    border-bottom: 2px solid var(--blue-pale);
-    padding-bottom: 0.5rem;
-  }
-
-  .project-period:first-child { margin-top: 0; }
-
-  .project-card {
-    padding: 1.2rem 1.3rem;
-    margin-bottom: 1rem;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-  }
-
-  .project-card h4 {
-    font-size: 0.82rem;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+    font-family: var(--mono);
+    font-size: 0.85rem;
     color: var(--blue-mid);
-    margin-bottom: 0.3rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: block;
   }
 
   .project-card .project-name {
-    font-size: 0.97rem;
+    font-size: 1.1rem;
     font-weight: 600;
     color: var(--ink);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     line-height: 1.4;
   }
 
   .project-card .project-role {
-    font-size: 0.88rem;
-    color: var(--ink-light);
-    display: flex;
-    align-items: flex-start;
-    gap: 0.4rem;
-  }
-
-  .project-card .project-role::before {
-    content: '→';
-    color: var(--blue-light);
-    flex-shrink: 0;
-    margin-top: 0.05rem;
-  }
-
-  /* ── Awards ───────────────────────────────────────────────── */
-  .award-list { list-style: none; }
-
-  .award-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    padding: 0.9rem 0;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .award-item:last-child { border-bottom: none; }
-
-  .award-icon {
-    width: 36px;
-    height: 36px;
-    border-radius: var(--radius-sm);
-    background: #fff8e1;
-    border: 1px solid #ffe082;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-  }
-
-  .award-icon i { color: #f59e0b; font-size: 1rem; }
-
-  .award-text {
     font-size: 0.95rem;
     color: var(--ink-mid);
-    line-height: 1.5;
-    padding-top: 0.4rem;
   }
 
   /* ── Footer ───────────────────────────────────────────────── */
   footer {
     background: var(--blue-dark);
-    color: rgba(255,255,255,0.8);
-    padding: 3rem 2rem 2rem;
-    margin-top: 2rem;
+    color: rgba(255,255,255,0.7);
+    padding: 5rem 2rem 3rem; /* 增加 padding */
+    margin-top: 0; /* 移除 section 和 footer 之间的间隔 */
+    border-top: 1px solid rgba(255,255,255,0.05);
   }
 
   .footer-inner {
     max-width: var(--max);
     margin: 0 auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 使用 Grid 布局 */
     gap: 3rem;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid rgba(255,255,255,0.12);
-    margin-bottom: 1.5rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    margin-bottom: 2rem;
   }
 
   .footer-col h4 {
-    font-family: var(--serif);
-    font-size: 1.1rem;
+    font-family: var(--sans); /* Footer 标题改用 Sans，更现代 */
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
     color: #fff;
-    margin-bottom: 0.9rem;
-    font-weight: 500;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
   }
 
   .footer-col p, .footer-col li {
-    font-size: 0.88rem;
-    line-height: 1.9;
-    color: rgba(255,255,255,0.7);
-    list-style: none;
+    font-size: 0.9rem;
+    line-height: 2;
+    color: rgba(255,255,255,0.6);
   }
 
   .footer-col a {
-    color: rgba(255,255,255,0.72);
+    color: rgba(255,255,255,0.6);
     text-decoration: none;
-    transition: color 0.2s;
+    transition: var(--transition);
   }
 
-  .footer-col a:hover { color: #fff; text-decoration: underline; }
+  .footer-col a:hover { color: var(--blue-light); text-decoration: none; }
 
   .footer-socials {
     display: flex;
-    gap: 0.7rem;
-    margin-top: 1rem;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
   }
 
   .footer-social-btn {
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    background: rgba(255,255,255,0.12);
-    border: 1px solid rgba(255,255,255,0.18);
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(255,255,255,0.85);
+    color: rgba(255,255,255,0.8);
     text-decoration: none;
-    transition: background 0.2s;
-    font-size: 0.9rem;
+    transition: var(--transition);
+    font-size: 1rem;
   }
 
   .footer-social-btn:hover {
-    background: rgba(255,255,255,0.26);
+    background: var(--blue-mid);
+    border-color: var(--blue-mid);
     color: #fff;
+    transform: translateY(-3px) scale(1.1);
   }
 
   .footer-bottom {
     max-width: var(--max);
     margin: 0 auto;
     text-align: center;
-    font-size: 0.82rem;
-    color: rgba(255,255,255,0.45);
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.4);
+    font-family: var(--mono);
   }
-
-  /* ── Utility ──────────────────────────────────────────────── */
-  .mt-sm { margin-top: 0.5rem; }
-  .mt-md { margin-top: 1rem; }
-  .mt-lg { margin-top: 2rem; }
-</style>
-</head>
-<body>
-
-<!-- ── Navigation ───────────────────────────────────────────── -->
-<nav>
-  <a class="nav-brand" href="#">Xi'an Jiaotong University</a>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#research">Research</a></li>
-    <li><a href="#publications">Publications</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#awards">Awards</a></li>
-  </ul>
-</nav>
-
-<!-- ── Hero ─────────────────────────────────────────────────── -->
-<header class="hero">
-  <div class="hero-inner">
-    <div class="hero-avatar">
-      <!-- Replace src with your actual photo path -->
-      <img src="static/assets/img/photo.png" alt="Zheng Gao" class="hero-avatar-img" />
-    </div>
-    <div class="hero-text">
-      <h1>Zheng Gao</h1>
-      <span class="cn-name">高正</span>
-      <p class="role">Ph.D. Candidate · Power Engineering &amp; Engineering Thermophysics</p>
-      <p class="affil">Xi'an Jiaotong University, Xi'an, China</p>
-      <div class="hero-badges">
-        <a href="mailto:gaozheng@stu.xjtu.edu.cn" class="badge">
-          <i class="fa-solid fa-envelope"></i> gaozheng@stu.xjtu.edu.cn
-        </a>
-        <a href="https://www.researchgate.net/profile/Zheng-Gao-31" target="_blank" class="badge">
-          <i class="fa-brands fa-researchgate"></i> ResearchGate
-        </a>
-        <a href="https://scholar.google.com/citations?user=8JTVl_MAAAAJ&hl=en" target="_blank" class="badge">
-          <i class="fa-brands fa-google"></i> Google Scholar
-        </a>
-      </div>
-    </div>
-  </div>
-</header>
-
-<!-- ── About ────────────────────────────────────────────────── -->
-<section id="about">
-  <div class="container">
-    <div class="section-label">About Me</div>
-    <h2 class="section-title">Biography</h2>
-    <div class="about-grid">
-      <div class="about-text">
-        <p>
-          I am a Ph.D. candidate in Power Engineering and Engineering Thermophysics at
-          <strong>Xi'an Jiaotong University</strong>. My research focuses on adsorption thermodynamics,
-          gas separation, and data-driven molecular simulation of porous materials.
-        </p>
-        <p>
-          I work at the interface of molecular modeling, machine learning, and energy systems,
-          seeking to establish predictive structure–property relationships for adsorption-based
-          technologies.
-        </p>
-        <p>
-          My work spans hydrogen storage in porous materials, carbon capture, and gas purification,
-          with an emphasis on creating generalizable computational frameworks combining GCMC/MD
-          simulations with machine learning surrogate models.
-        </p>
-        <div class="contact-row">
-          <i class="fa-solid fa-envelope"></i>
-          <span>Email: <a href="mailto:gaozheng@stu.xjtu.edu.cn">gaozheng 𝑎𝑡 stu.xjtu.edu.cn</a></span>
-        </div>
-      </div>
-
-      <div>
-        <p class="section-label">Education</p>
-        <ul class="edu-list">
-          <li class="edu-item">
-            <div class="edu-dot"></div>
-            <div>
-              <div class="edu-degree">Visiting Student (CSC) </div>
-              <div class="edu-school">National University of Singapore, Singapore</div>
-              <div class="edu-period">2026.03 – Present</div>
-            </div>
-          </li>
-          <li class="edu-item">
-            <div class="edu-dot"></div>
-            <div>
-              <div class="edu-degree">Visiting Student (CSC) </div>
-              <div class="edu-school">Tohoku University, Sendai, Japan</div>
-              <div class="edu-period">2025.11 – 2026.02</div>
-            </div>
-          </li>
-          <li class="edu-item">
-            <div class="edu-dot"></div>
-            <div>
-              <div class="edu-degree">Ph.D., Engineering Thermophysics</div>
-              <div class="edu-school">Xi'an Jiaotong University, Xi'an, China</div>
-              <div class="edu-period">2021.09 – Present</div>
-            </div>
-          </li>
-          <li class="edu-item">
-            <div class="edu-dot"></div>
-            <div>
-              <div class="edu-degree">Visiting Student</div>
-              <div class="edu-school">Peter the Great St. Petersburg Polytechnic University, Russia</div>
-              <div class="edu-period">2019.10 – 2020.01</div>
-            </div>
-          </li>
-          <li class="edu-item">
-            <div class="edu-dot"></div>
-            <div>
-              <div class="edu-degree">M.Eng., Energy &amp; Power Engineering</div>
-              <div class="edu-school">Xi'an University of Science and Technology</div>
-              <div class="edu-period">2018.09 – 2021.06</div>
-            </div>
-          </li>
-          <li class="edu-item">
-            <div class="edu-dot"></div>
-            <div>
-              <div class="edu-degree">B.E., Energy &amp; Power Engineering</div>
-              <div class="edu-school">Xi'an University of Science and Technology</div>
-              <div class="edu-period">2014.09 – 2018.06</div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── Research Interests ────────────────────────────────────── -->
-<section id="research">
-  <div class="container">
-    <div class="section-label">Research</div>
-    <h2 class="section-title">Research Interests</h2>
-    <div class="research-grid">
-      <div class="research-card">
-        <div class="research-icon"><i class="fa-solid fa-atom"></i></div>
-        <h3>Adsorption Thermodynamics &amp; Kinetics</h3>
-        <p>Microscopic adsorption mechanisms and isotherm representation in nanoporous materials.</p>
-      </div>
-      <div class="research-card">
-        <div class="research-icon"><i class="fa-solid fa-filter"></i></div>
-        <h3>Gas Separation &amp; Purification</h3>
-        <p>High-throughput screening of MOFs and COFs for industrial gas separation processes.</p>
-      </div>
-      <div class="research-card">
-        <div class="research-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
-        <h3>Hydrogen Storage</h3>
-        <p>Porous material design for high-density, fast-response solid-state hydrogen storage.</p>
-      </div>
-      <div class="research-card">
-        <div class="research-icon"><i class="fa-solid fa-computer"></i></div>
-        <h3>Molecular Simulation</h3>
-        <p>GCMC and MD simulations for structure–property relationships of adsorbents.</p>
-      </div>
-      <div class="research-card">
-        <div class="research-icon"><i class="fa-solid fa-brain"></i></div>
-        <h3>Machine Learning for Materials</h3>
-        <p>Surrogate modeling and high-throughput material screening with data-driven methods.</p>
-      </div>
-      <div class="research-card">
-        <div class="research-icon"><i class="fa-solid fa-wave-square"></i></div>
-        <h3>PSA / TSA / ESA Processes</h3>
-        <p>Multiphysics heat &amp; mass transfer modeling in adsorption-based separation cycles.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── Publications ──────────────────────────────────────────── -->
-<section id="publications">
-  <div class="container">
-    <div class="section-label">Publications</div>
-    <h2 class="section-title">Journal Papers</h2>
-
-    <!-- 2026 -->
-    <div class="pub-year-group">
-      <div class="pub-year-label">2026</div>
-      <ul class="pub-list">
-        <li class="pub-item">
-          W Gao, Z Qu, <span class="pub-me">Z. Gao</span>, Z Tang, J Zhang, W Yang,
-          "Theoretical models for the effective thermal conductivity of metal hydride bed under multiple heat conduction mechanisms."
-          <span class="pub-journal">International Journal of Heat and Mass Transfer</span>, 2026, 263, 128657.
-          <br/>
-          <a href="https://www.sciencedirect.com/science/article/pii/S0017931026003339" target="_blank" class="pub-link">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Link
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- 2025 -->
-    <div class="pub-year-group">
-      <div class="pub-year-label">2025</div>
-      <ul class="pub-list">
-        <li class="pub-item">
-          W. Gao, Z. Qu, <span class="pub-me">Z. Gao</span>, J. Zhang, W. Yang,
-          "Multi-step numerical method for the hydrogen storage performance optimisation of metal hydride reactors."
-          <span class="pub-journal">Journal of Energy Storage</span>, 2025, 133, 118000.
-          <br/>
-          <a href="https://www.sciencedirect.com/science/article/pii/S2352152X25027136" target="_blank" class="pub-link">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Link
-          </a>
-        </li>
-        <li class="pub-item">
-          <span class="pub-me">Z. Gao</span>, H. Wang, Z.-G. Qu,
-          "Data-driven high-throughput screening of anion-pillared metal-organic frameworks for hydrogen storage."
-          <span class="pub-journal">CIESC Journal</span>, 2025, 76(08), 4259–4272.
-          <br/>
-          <a href="https://hgxb.cip.com.cn/CN/10.11949/0438-1157.20250178" target="_blank" class="pub-link">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Link
-          </a>
-        </li>
-        <li class="pub-item">
-          <span class="pub-me">Z. Gao</span>, H. Wang, Z.-G. Qu, Z. Tian,
-          "High-throughput screening of covalent organic framework membranes for hydrogen separation from hydrogen-blended natural gas."
-          <span class="pub-journal">Applied Thermal Engineering</span>, 2025, 271, 126333.
-          <br/>
-          <a href="https://www.sciencedirect.com/science/article/pii/S1359431125009251" target="_blank" class="pub-link">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Link
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- 2024 -->
-    <div class="pub-year-group">
-      <div class="pub-year-label">2024</div>
-      <ul class="pub-list">
-        <li class="pub-item">
-          T. Zhang, J.-J. Lv, Y. Dang, <span class="pub-me">Z. Gao</span>, H. Wang, J.-W. Cao, G.-H. Zhang, H. Rao, F.-P. Pan, K.-J. Chen,
-          "High-throughput computational screening-driven porous material discovery for benchmark propylene/propane separation."
-          <span class="pub-journal">Adv. Funct. Mater.</span>, 2024, 2412457.
-          <br/>
-          <a href="https://onlinelibrary.wiley.com/action/showCitFormats?doi=10.1002%2Fadfm.202412457" target="_blank" class="pub-link">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Link
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- 2022 -->
-    <div class="pub-year-group">
-      <div class="pub-year-label">2022</div>
-      <ul class="pub-list">
-        <li class="pub-item">
-          C. Zheng, D. Ma, Y. Chen, Y. Xia, <span class="pub-me">Z. Gao</span>, G. Li, W. Li,
-          "Biogenic Methane Accumulation and Production in the Jurassic Low-Rank Coal, Southwestern Ordos Basin."
-          <span class="pub-journal">Energies</span>, 2022, 15(9), 3255.
-          <br/>
-          <a href="https://www.mdpi.com/1996-1073/15/9/3255" target="_blank" class="pub-link">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Link
-          </a>
-        </li>
-        <li class="pub-item">
-          Y. Chen, L. Wang, G. Li, L. Zhang, F. Yang, Z. Ma, <span class="pub-me">Z. Gao</span>,
-          "Prediction of favorable areas for low-rank coalbed methane based on Random Forest algorithm."
-          <span class="pub-journal">Reservoir Evaluation and Development</span>, 2022, 12(4), 596–603.
-          <br/>
-          <a href="http://red.magtech.org.cn/CN/10.13809/j.cnki.cn32-1825/te.2022.04.007" target="_blank" class="pub-link">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Link
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- 2021 -->
-    <div class="pub-year-group">
-      <div class="pub-year-label">2021</div>
-      <ul class="pub-list">
-        <li class="pub-item">
-          C. Zheng, D. Ma, Y. Chen, <span class="pub-me">Z. Gao</span>, J. Teng,
-          "Pore structure of different macroscopically distinguished components within low-rank coals and its methane desorption characteristics."
-          <span class="pub-journal">Fuel</span>, 2021, 293, 120465.
-          <br/>
-          <a href="https://www.sciencedirect.com/science/article/pii/S0016236121003410" target="_blank" class="pub-link">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Link
-          </a>
-        </li>
-        <li class="pub-item">
-          <span class="pub-me">Z. Gao</span>, D. Ma, Y. Chen,
-          "Law and quantitative evaluation of methane desorption hysteresis of coal seam in Huanglong coalfield."
-          <span class="pub-journal">Journal of Henan Polytechnic University (Natural Science)</span>, 2021, 40(05), 16–22+79.
-          <br/>
-          <a href="http://xuebao.hpu.edu.cn/info/10827/93204.htm" target="_blank" class="pub-link">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Link
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- 2020 -->
-    <div class="pub-year-group">
-      <div class="pub-year-label">2020</div>
-      <ul class="pub-list">
-        <li class="pub-item">
-          <span class="pub-me">Z. Gao</span>, D. Ma, Y. Chen, C. Zheng, J. Teng,
-          "Study for the effect of temperature on methane desorption based on thermodynamics and kinetics."
-          <span class="pub-journal">ACS Omega</span>, 2020, 6(1), 702–714.
-          <br/>
-          <a href="https://pubs.acs.org/doi/10.1021/acsomega.0c05236" target="_blank" class="pub-link">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Link
-          </a>
-        </li>
-        <li class="pub-item">
-          <span class="pub-me">Z. Gao</span>, D. Ma, Y. Chen, H. Zhang, L. Zhang,
-          "Effect of water content on adsorption/desorption of methane of different macroscopic lithotypes."
-          <span class="pub-journal">Coal Science and Technology</span>, 2020, 48(8), 97–105.
-          <span class="pub-tag">⭐ Top 50 Most Cited (2020–2023)</span>
-          <br/>
-          <a href="http://www.chinacaj.net/i,2,437796,0.html" target="_blank" class="pub-link">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Link
-          </a>
-        </li>
-        <li class="pub-item">
-          D. Ma, <span class="pub-me">Z. Gao</span>, Y. Chen, H. Zhang, K. Shao, Z. Zhang, X. Wu, F. Yang,
-          "Differences in methane adsorption and desorption characteristics of low, medium and high rank coal reservoirs at different temperatures."
-          <span class="pub-journal">Reservoir Evaluation and Development</span>, 2020, 10(4), 17–24.
-          <br/>
-          <a href="http://red.magtech.org.cn/CN/abstract/abstract251.shtml" target="_blank" class="pub-link">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Link
-          </a>
-        </li>
-        <li class="pub-item">
-          T. Mu, D. Ma, Y. Chen, <span class="pub-me">Z. Gao</span>, H. Zhang, J. Teng, F. Yang, K. Shao, L. Zhang,
-          "Start-migration law of coal powder with different particle sizes under multi-phase flow conditions in coalbed methane wells."
-          <span class="pub-journal">Coal Science and Technology</span>, 2020, 48(5), 188–196.
-          <br/>
-          <a href="http://www.mtkxjs.com.cn/cn/article/id/da890537-828a-4668-86c6-3d477f769c74" target="_blank" class="pub-link">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Link
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- 2019 -->
-    <div class="pub-year-group">
-      <div class="pub-year-label">2019</div>
-      <ul class="pub-list">
-        <li class="pub-item">
-          Y. Chen, D. Ma, C. Guo, F. Yang, T. Mu, <span class="pub-me">Z. Gao</span>,
-          "An experimental study on the conductivity changes in coal during methane adsorption–desorption and their influencing factors."
-          <span class="pub-journal">Acta Geologica Sinica (English Edition)</span>, 2019, 93(3), 704–717.
-          <br/>
-          <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1755-6724.13873" target="_blank" class="pub-link">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Link
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Conference Papers -->
-    <div class="mt-lg">
-      <div class="section-label">Conference Papers</div>
-      <h2 class="section-title" style="font-size: 1.5rem; margin-bottom: 1.2rem;">Conferences &amp; Presentations</h2>
-      <ul class="conf-list">
-        <li class="conf-item">
-          <span class="pub-me">Z. Gao</span>, Z. Qu*.
-          "High-throughput screening of covalent organic framework membranes for hydrogen separation from hydrogen-doped natural gas."
-          <em>The 9th Asian Symposium on Computational Heat Transfer and Fluid Flow (ASCHT 2023)</em>, Thuwal, Saudi Arabia.
-          <br/><span class="conf-type">🎤 Oral Presentation</span>
-        </li>
-        <li class="conf-item">
-          <span class="pub-me">Z. Gao</span>, H. Wang, Z. Qu*.
-          "Geological hydrogen storage: molecular simulation study of H₂/CH₄/CO₂ adsorption by type II kerogen."
-          <em>The 20th National Hydrogen Energy Conference</em>, China, 2023.
-          <br/><span class="conf-type">🪧 Poster</span>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ── Projects ──────────────────────────────────────────────── -->
-<section id="projects">
-  <div class="container">
-    <div class="section-label">Projects</div>
-    <h2 class="section-title">Research Projects</h2>
-
-    <div class="project-period">Ph.D. Period</div>
-    <div class="project-card">
-      <h4>National Key Research &amp; Development Program, China</h4>
-      <div class="project-name">Key Technology for High-Density, Large-Capacity, and Fast-Response Solid-State Hydrogen Storage</div>
-      <div class="project-role">Studied mass transfer of hydrogen in hydride.</div>
-    </div>
-    <div class="project-card">
-      <h4>National Key R&amp;D Program "Intergovernmental International Cooperation", China</h4>
-      <div class="project-name">Collaborative Research on Hydrogen Purification Materials and Process Optimization by Medium-Temperature Rapid Pressure Swing Adsorption</div>
-      <div class="project-role">Investigated mass transfer of gas mixtures in adsorption beds.</div>
-    </div>
-
-    <div class="project-period">Master's Period</div>
-    <div class="project-card">
-      <h4>Major Science &amp; Technology Project of Shanxi Province, China</h4>
-      <div class="project-name">Study on Coalbed Methane Desorption and Dual Pore Gas-Water Mass Transfer Mechanism</div>
-      <div class="project-role">Responsible for mass transfer research in coalbed methane.</div>
-    </div>
-    <div class="project-card">
-      <h4>National Natural Science Foundation, China</h4>
-      <div class="project-name">Methane Desorption Mechanism of Different Coal Components in Low-Rank Coal under Wettability Constraints</div>
-      <div class="project-role">Conducted coalbed methane adsorption experiments under different wetting conditions.</div>
-    </div>
-  </div>
-</section>
-
-<!-- ── Awards ────────────────────────────────────────────────── -->
-<section id="awards">
-  <div class="container">
-    <div class="section-label">Recognition</div>
-    <h2 class="section-title">Awards &amp; Honors</h2>
-    <ul class="award-list">
-      <li class="award-item">
-        <div class="award-icon"><i class="fa-solid fa-award"></i></div>
-        <div class="award-text">
-          <strong>Outstanding Master Graduate</strong> — Xi'an University of Science and Technology, 2021
-        </div>
-      </li>
-      <li class="award-item">
-        <div class="award-icon"><i class="fa-solid fa-trophy"></i></div>
-        <div class="award-text">
-          <strong>Excellent Master's Thesis</strong> — Xi'an University of Science and Technology, 2021
-        </div>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<!-- ── Footer ────────────────────────────────────────────────── -->
-<footer>
-  <div class="footer-inner">
-    <div class="footer-col">
-      <h4>Zheng Gao · 高正</h4>
-      <p>Ph.D. Candidate</p>
-      <p>School of Chemical Engineering</p>
-      <p>Xi'an Jiaotong University</p>
-      <p>Xi'an, Shaanxi, China</p>
-      <div class="footer-socials">
-        <a href="mailto:gaozheng@stu.xjtu.edu.cn" class="footer-social-btn" title="Email">
-          <i class="fa-solid fa-envelope"></i>
-        </a>
-        <a href="https://www.researchgate.net/profile/Zheng-Gao-31" target="_blank" class="footer-social-btn" title="ResearchGate">
-          <i class="fa-brands fa-researchgate"></i>
-        </a>
-        <a href="https://scholar.google.com/citations?user=8JTVl_MAAAAJ&hl=en" target="_blank" class="footer-social-btn" title="Google Scholar">
-          <i class="fa-brands fa-google"></i>
-        </a>
-      </div>
-    </div>
-    <div class="footer-col">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#research">Research Interests</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#projects">Research Projects</a></li>
-        <li><a href="#awards">Awards</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Research Areas</h4>
-      <ul>
-        <li>Adsorption Thermodynamics</li>
-        <li>Gas Separation &amp; Purification</li>
-        <li>Hydrogen Storage</li>
-        <li>GCMC / MD Simulation</li>
-        <li>Machine Learning for Materials</li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    © Zheng Gao 2026. All Rights Reserved.
-  </div>
-</footer>
-
-</body>
-</html>
