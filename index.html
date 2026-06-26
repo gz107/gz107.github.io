@@ -9,7 +9,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Arial:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Source+Sans+3:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
@@ -36,10 +36,11 @@
     --surface:     #ffffff;
     --bg:          #ffffff; /* 改为纯白背景，让内容更突出 */
 
-    /* 字体 */
-    --Arial:  'EB Garamond', Georgia, Arial;
-    --Arial:   'DM Arial', system-ui, -apple-system, Arial-Arial;
-    --mono:   'JetBrains Mono', monospace;
+    /* 字体：标题衬线 + 正文衬线 + UI 无衬线，整体更接近学术主页/期刊风格 */
+    --font-serif: 'EB Garamond', Georgia, 'Times New Roman', serif;
+    --font-body:  'Source Serif 4', Georgia, 'Times New Roman', serif;
+    --font-ui:    'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    --font-mono:  'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
 
     /* 圆角与阴影 */
     --radius-sm:  6px;
@@ -58,18 +59,24 @@
   html { scroll-behavior: smooth; font-size: 16px; }
 
   body {
-    font-family: var(--Arial);
-    line-height: 1.8; /* 增加行高 */
+    font-family: var(--font-body);
+    line-height: 1.78; /* 增加行高 */
     color: var(--ink-mid); /* body 使用次级文字颜色，减少视觉疲劳 */
     background: var(--bg);
     -webkit-font-smoothing: antialiased;
   }
 
   /* 标题排版微调 */
-  h1, h2, h3, h4 { color: var(--ink); font-weight: 600; }
+  h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+    color: var(--ink);
+    font-weight: 600;
+    letter-spacing: -0.015em;
+  }
 
   /* ── Nav ──────────────────────────────────────────────────── */
   nav {
+    font-family: var(--font-ui);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -86,7 +93,7 @@
   }
 
   .nav-brand {
-    font-family: var(--Arial);
+    font-family: var(--font-serif);
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--blue-dark);
@@ -101,6 +108,7 @@
   }
 
   .nav-links a {
+    font-family: var(--font-ui);
     font-size: 0.9rem;
     font-weight: 500;
     color: var(--ink-mid);
@@ -168,9 +176,9 @@
   }
 
   .hero-text h1 {
-    font-family: var(--Arial);
-    font-size: 3.2rem; /* 加大字号 */
-    font-weight: 500;
+    font-family: var(--font-serif);
+    font-size: 3.25rem; /* 学术主页主标题 */
+    font-weight: 600;
     color: #ffffff;
     line-height: 1.1;
     margin-bottom: 0.5rem;
@@ -178,15 +186,16 @@
   }
 
   .hero-text .cn-name {
-    font-family: var(--Arial);
-    font-size: 1.6rem;
-    font-weight: 400;
+    font-family: var(--font-serif);
+    font-size: 1.55rem;
+    font-weight: 500;
     color: rgba(255,255,255,0.7);
     margin-bottom: 1.2rem;
     display: block;
   }
 
   .hero-text .role {
+    font-family: var(--font-ui);
     font-size: 1.1rem;
     color: rgba(255,255,255,0.95);
     margin-bottom: 0.4rem;
@@ -194,6 +203,7 @@
   }
 
   .hero-text .affil {
+    font-family: var(--font-ui);
     font-size: 1rem;
     color: rgba(255,255,255,0.7);
     margin-bottom: 2rem;
@@ -207,6 +217,7 @@
   }
 
   .badge {
+    font-family: var(--font-ui);
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -254,6 +265,7 @@
   }
 
   .section-label {
+    font-family: var(--font-ui);
     display: inline-flex;
     align-items: center;
     gap: 0.6rem;
@@ -275,7 +287,7 @@
   }
 
   h2.section-title {
-    font-family: var(--Arial);
+    font-family: var(--font-serif);
     font-size: 2.5rem; /* 加大标题 */
     font-weight: 500;
     color: var(--blue-dark);
@@ -305,6 +317,7 @@
   }
 
   .contact-row {
+    font-family: var(--font-ui);
     display: inline-flex; /* 视觉上缩小 */
     align-items: center;
     gap: 0.7rem;
@@ -382,7 +395,7 @@
   .edu-period {
     font-size: 0.85rem;
     color: var(--ink-light);
-    font-family: var(--mono);
+    font-family: var(--font-mono);
   }
 
   @media (max-width: 850px) {
@@ -460,7 +473,7 @@
   .pub-year-group { margin-bottom: 3.5rem; } /* 增加组间距 */
 
   .pub-year-label {
-    font-family: var(--Arial); /* 改用 Arial 字体，更有质感 */
+    font-family: var(--font-serif);
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--blue-dark);
@@ -515,6 +528,7 @@
   }
 
   .pub-item a.pub-link {
+    font-family: var(--font-ui);
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
@@ -539,6 +553,7 @@
   }
 
   .pub-tag {
+    font-family: var(--font-ui);
     display: inline-block;
     font-size: 0.75rem;
     font-weight: 600;
@@ -569,7 +584,7 @@
   }
 
   .project-period {
-    font-family: var(--mono);
+    font-family: var(--font-mono);
     font-size: 0.85rem;
     color: var(--blue-mid);
     font-weight: 500;
@@ -611,7 +626,7 @@
   }
 
   .footer-col h4 {
-    font-family: var(--Arial); /* Footer 标题改用 Arial，更现代 */
+    font-family: var(--font-ui);
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -668,7 +683,7 @@
     text-align: center;
     font-size: 0.8rem;
     color: rgba(255,255,255,0.4);
-    font-family: var(--mono);
+    font-family: var(--font-mono);
   }
 </style>
 </head>
